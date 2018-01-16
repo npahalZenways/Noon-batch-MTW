@@ -1,0 +1,11 @@
+{
+	"compilerOptions": {
+		"sourceMap": true,
+		"removeComments": true,
+		"target": "es6"
+	},
+	"files": [
+		"myFirstFile.ts",
+		"mySecondFile.ts"
+	]
+}
