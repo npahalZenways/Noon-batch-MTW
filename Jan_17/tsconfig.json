@@ -1,0 +1,8 @@
+{
+	"compilerOptions": {
+		"sourceMap": true,
+		"removeComments": true,
+		"target": "es6",
+		"experimentalDecorators": true
+	}
+}
