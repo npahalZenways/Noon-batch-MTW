@@ -4,13 +4,15 @@ import { HeaderComponent } from "./header/header";
 import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
 import { InnerComponent } from "./InnerComponent/in.comp";
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
     // rest
     AppComponent,
     HeaderComponent,
-    InnerComponent
+    InnerComponent,
+    FooterComponent
   ],
   imports: [
     // modules

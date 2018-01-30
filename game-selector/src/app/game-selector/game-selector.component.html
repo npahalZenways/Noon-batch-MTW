@@ -1,0 +1,15 @@
+<h1 style="text-align: center">{{title}}</h1>
+<h3 style="text-align: center" [ngClass]="{'orange':!selectedGame, 'blue': selectedGame}">Selected game : {{selectedGame ? selectedGame.gameName : '---'}}</h3>
+
+<div *ngIf="!selectedGame; else playersBlock">
+  <div class="inline" *ngFor="let game of games" (click)="selectedGame = game">
+    <img [src]="game.gameImgUrl" width="400px">
+    <p>{{game.gameName}}</p>
+  </div>
+</div>
+<ng-template #playersBlock>
+  <h4>Players list:
+    <button style="float:right" (click)="selectedGame = undefined">Back</button>
+  </h4>
+  <p *ngFor="let player of selectedGame.players">{{player}}</p>
+</ng-template>

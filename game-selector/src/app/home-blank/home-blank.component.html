@@ -1,0 +1,15 @@
+<div style="border: 1px solid gray; border-radius: 3px; padding: 10px">
+  <form (ngSubmit)="submit()">
+    <div>
+      <label for="username">Username</label>
+      <input type="text" id="username" [(ngModel)]="uname" name="uname">
+    </div>
+    <br>
+    <div>
+      <label for="password">Password</label>
+      <input type="password" id="password" [(ngModel)]="key" name="key">
+    </div>
+    <br>
+    <button>Submit</button>
+  </form>
+</div>
